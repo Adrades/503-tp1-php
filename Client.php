@@ -31,4 +31,12 @@ class Client implements JsonSerializable
     {
         return array('nom'=>$this->nom);
     }
+
+    /**
+     * @param int $nombreClients
+     */
+    public static function setNombreClients($nombreClients)
+    {
+        self::$nombreClients = $nombreClients;
+    }
 }
